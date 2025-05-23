@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+    <a href="help.html" target="_blank">Help</a>
+  </nav>
+
+  <section id="home">
+    <div id="welcomeBanner">Welcome to Our Community Portal!
+      <span style="color: red; font-weight: bold;">Special Offer!</span>
+    </div>
+    <p class="highlight">Connecting our city through events.</p>
+  </section>
+
+  <section id="events">
+    <h2>Past Events Gallery</h2>
+    <table>
+      <caption>Highlights from Past Events</caption>
+      <tr>
+        <td><img src="https://via.placeholder.com/150" alt="Event 1" title="Event 1" class="gallery"></td>
+        <td><img src="https://via.placeholder.com/150" alt="Event 2" title="Event 2" class="gallery"></td>
+        <td><img src="https://via.placeholder.com/150" alt="Event 3" title="Event 3" class="gallery" ondblclick="enlarge(this)"></td>
+      </tr>
+      <tr>
+        <td><img src="https://via.placeholder.com/150" alt="Event 4" title="Event 4" class="gallery"></td>
+        <td><img src="https://via.placeholder.com/150" alt="Event 5" title="Event 5" class="gallery"></td>
+        <td><img src="https://via.placeholder.com/150" alt="Event 6" title="Event 6" class="gallery"></td>
+      </tr>
+    </table>
+
+    <h3>Register for an Upcoming Event</h3>
+    <form onsubmit="return showConfirmation()">
+      <label>Name: <input type="text" placeholder="Enter name" required autofocus></label><br>
+      <label>Email: <input type="email" placeholder="Enter email" required></label><br>
+      <label>Phone: <input type="text" id="phone" onblur="validatePhone(this)" required></label><br>
+      <label>Event Date: <input type="date" required></label><br>
+      <label>Event Type:
+        <select onchange="updateFee(this)">
+          <option value="">Select</option>
+          <option value="10">Yoga - ₹10</option>
+          <option value="20">Tech - ₹20</option>
+        </select>
+      </label><br>
+      <output id="eventFee"></output><br>
+      <label>Message:<br>
+        <textarea onkeyup="countCharacters(this)"></textarea>
+      </label><br>
+      <span id="charCount">0 characters</span><br>
+      <button type="submit">Submit</button>
+      <button type="button" onclick="clearPreferences()">Clear Preferences</button>
+    </form>
+    <output id="confirmation"></output>
+
+    <button onclick="getLocation()">Find Nearby Events</button>
+    <div id="locationOutput"></div>
+  </section>
+
+  <section id="contact">
+    <h3>Event Promo</h3>
+    <video width="320" height="240" controls oncanplay="videoReady()">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div id="videoStatus"></div>
+  </section>
+
+  <script>
+    window.onbeforeunload = function () {
+      return "Changes you made may not be saved.";
+    };
+  </script>
+</body>
+</html>

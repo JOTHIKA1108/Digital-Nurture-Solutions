@@ -1,0 +1,51 @@
+When you download the Bootstrap package (like bootstrap-x.x.x-dist.zip), inside you typically get these main folders:
+
+1. css/
+Contains all the CSS stylesheets for Bootstrap.
+
+Main files inside:
+
+bootstrap.css — The full, unminified CSS file (easy to read, good for debugging).
+
+bootstrap.min.css — Minified CSS (compressed for faster loading).
+
+bootstrap.rtl.css and bootstrap.rtl.min.css — Right-to-left language support versions.
+
+Purpose:
+This folder holds all styling rules that make Bootstrap components look and behave properly visually.
+
+2. js/
+Contains JavaScript files that add interactivity and dynamic behavior to Bootstrap components.
+
+Main files inside:
+
+bootstrap.bundle.js — Includes all Bootstrap JS plugins and Popper.js (needed for dropdowns, tooltips).
+
+bootstrap.bundle.min.js — Minified version of the bundle.
+
+bootstrap.js — Only Bootstrap JS plugins, without Popper.js.
+
+bootstrap.min.js — Minified version without Popper.js.
+
+Purpose:
+JavaScript files power interactive elements like modals, carousels, dropdowns, accordions, tooltips, popovers, etc.
+
+3. icons/ (If downloaded separately or when using Bootstrap Icons)
+Contains SVG icon files, CSS, and fonts for Bootstrap Icons.
+
+This folder may include:
+
+bootstrap-icons.css — The CSS file to use icons in your HTML.
+
+fonts/ — Font files (like .woff2, .ttf) that support icon rendering.
+
+icons/ — Individual SVG files for each icon.
+
+Purpose:
+This folder provides a library of vector icons that integrate seamlessly with Bootstrap styling, used for buttons, navigation, alerts, and many UI elements.
+
+Summary Table
+Folder	Purpose	Main Contents
+css/	Styling (colors, layout, typography, responsiveness)	bootstrap.css, bootstrap.min.css
+js/	Interactive components behavior	bootstrap.bundle.min.js, plugins
+icons/	Vector icons for UI elements	CSS, SVG icons, font files

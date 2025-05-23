@@ -1,0 +1,155 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+#mainHeader {
+  background: linear-gradient(90deg, #007BFF, #00BFFF);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+.nav-menu a:link,
+.nav-menu a:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+  color: #ffdd57;
+}
+
+/* Event card container */
+.eventCard {
+  background-color: rgba(0, 123, 255, 0.1);
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h2 {
+  background: linear-gradient(45deg, #007BFF, #00BFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+h3,
+p {
+  margin-bottom: 10px;
+}
+
+/* Grouped selectors */
+h3, p {
+  color: #444;
+}
+
+/* Table styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #007BFF;
+  padding: 12px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e6f2ff;
+}
+
+/* Box model for eventCard */
+.eventCard {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #007BFF;
+  border-radius: 10px;
+}
+
+/* Outline for highlighted input */
+input.highlight:focus {
+  outline: 3px solid #007BFF;
+}
+
+/* Link button style */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Multi-column layout */
+.multi-column {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  table, .eventCard, .multi-column {
+    width: 95%;
+  }
+
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 15px;
+  }
+}

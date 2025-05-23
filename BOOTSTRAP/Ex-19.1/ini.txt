@@ -1,0 +1,2 @@
+mkdir bootstrap-sass-custom && cd bootstrap-sass-custom
+npm init -y

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Responsive Columns</title>
+<style>
+  .container {
+    display: grid;
+    gap: 16px; /* space between columns and rows */
+    grid-template-columns: 1fr; /* default 1 column for mobile */
+  }
+
+  /* Tablet: 2 columns */
+  @media (min-width: 600px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Desktop: 3 columns */
+  @media (min-width: 900px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .item {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item">Column 1</div>
+  <div class="item">Column 2</div>
+  <div class="item">Column 3</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    h1.inline-red {
+      color: red;
+    }
+    body {
+      background-color: #f0f4f8;
+    }
+  </style>
+</head>
+<body>
+  <header id="mainHeader">
+    <h1 class="inline-red">Welcome to the Local Community Event Portal</h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="eventCard">
+    <h2>Upcoming Events</h2>
+    <article class="news-article">
+      <h3>Community Clean-up Drive</h3>
+      <p>Join us in keeping our neighborhood clean and green.</p>
+    </article>
+    <article class="news-article">
+      <h3>Summer Festival</h3>
+      <p>Celebrate the season with music, food, and fun activities for all ages.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Event Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Clean-up Drive</td>
+          <td>June 5</td>
+          <td>Community Park</td>
+        </tr>
+        <tr>
+          <td>Summer Festival</td>
+          <td>July 15</td>
+          <td>Town Square</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="news-article multi-column">
+    <h2>Community Bulletin</h2>
+    <p>
+      This month’s bulletin brings updates on local projects, announcements, and
+      volunteer opportunities. Stay informed and get involved in making a
+      difference in our community!
+    </p>
+  </section>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="highlight" />
+    <label for="email">Email:</label>
+    <input type="email" id="email" />
+    <button type="submit" class="cta-button">Subscribe</button>
+  </form>
+</body>
+</html>
